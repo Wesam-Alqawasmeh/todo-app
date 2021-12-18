@@ -1,4 +1,7 @@
 import React from "react";
+import { Button } from "react-bootstrap";
+
+import "./form.scss";
 
 export default function Form(props) {
   return (
@@ -37,9 +40,13 @@ export default function Form(props) {
         />
       </label>
 
-      <label>
+      <Button variant="primary" type="submit">
+        Add Item
+      </Button>
+
+      {/* <label>
         <button type="submit">Add Item</button>
-      </label>
+      </label> */}
     </form>
   );
 }
